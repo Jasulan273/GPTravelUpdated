@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <title>GPT Travel</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container_nav">
+                <div class="links">
+                    <img class="logo" src="logo.png" alt="">
+                    <a class="link" href="#">Басты бет</a>
+                    <a class="link" href="#">Турлар</a>
+                    <a class="link" href="#">Өтініш</a>
+                </div>
+                <div class="language-switcher">ҚҚ</div>
+            </div>
+        </nav>
+        <div class="container_header">
+            <div class="header_main">
+                <h1>GPT tour</h1>
+                <h2>сұрақ қойып, өз турыңды тап!</h2>
+                <div class="social_media">
+                    <img src="./image/instagram.png" alt="">
+                    <img src="./image/whatsapp.png" alt="">
+                    <img src="./image/viber.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="infoBlock">
+        <div class="container">
+            <h1 class="title">Неге біз?</h1>
+            <div class="advantages_block">
+                <div class="advantages">
+                    <img id="alter_block" src="./image/icon_1.png" alt="">
+                    <h2>Кез-келген сұрағыңызға жауап, кеңес, және тур туралы ақпаратты GPT чатботтан (24/7) біле аласыз
+                    </h2>
+                </div>
+                <div class="advantages">
+                    <img src="./image/icon_2.png" alt="">
+                    <h2> Жүйелі технологиямен сапалы әрі тез төлем жаса да, бізбен бірге саяхатта (онлайн төлем,
+                        бөліп-төлеу)</h2>
+                </div>
+                <div class="advantages">
+                    <img src="./image/icon_3.png" alt="">
+                    <h2>Виртуалды турмен саяхатыңды алдын-ала жоспарлау арқылы уақытыңызды үнемдеңіз</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <h1 class="title">ТУРЛАР</h1>
+            <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
+                <swiper-slide class="first_card">
+                    <h1>Көрнекті жерлер</h1>
+                    <h2>Әр қаланың тарихи және мәдени мұра ретінде қалдырылған жерлер</h2>
+                </swiper-slide>
+                <swiper-slide class="second_card">
+                   <h1>Көрнекті жерлер</h1>
+                   <h2>Әр қаланың тарихи және мәдени мұра ретінде қалдырылған жерлер</h2>
+                </swiper-slide>
+                <swiper-slide class="third_card">
+                    <h1>Көрнекті жерлер</h1>
+                    <h2>Әр қаланың тарихи және мәдени мұра ретінде қалдырылған жерлер</h2>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+    <div class="form_panel">
+        <div class="container">
+            <div class="form">
+                <h1 id="form_title" class="title">ӨТІНІШ ЖІБЕРУ</h1>
+                <input type="text" placeholder="Толық аты">
+                <input type="tel" placeholder="Телефон нөмірі"  name="phone_number" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required >
+                <a href="#"><h1>Жіберу</h1></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <h1 class="title">GPT tour</h1>
+                <div class="footer_links">
+                    <a href="#" class="footer_link">Басты бет</a>
+                    <a href="#" class="footer_link">Турлар</a>
+                    <a href="#" class="footer_link">Өтініш</a>
+                </div>
+                <div class="social_media">
+                    <img src="./image/instagram.png" alt="">
+                    <img src="./image/whatsapp.png" alt="">
+                    <img src="./image/viber.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="open-button" onclick="openForm()"></button>
+
+    <div class="chat-popup" id="myForm" style="display: none;">
+      <div class="chat-box">
+        <div class="chat-box-header">Сұрақ қойыңыз!</div>
+        <div class="chat-box-body">
+          <div class="response">
+            <p>GPT Travel платформасына қош келдіңіз.Мен виртуалды көмекшімін</p>
+          </div>
+        </div>
+        <div class="chat-box-footer">
+          <input type="text" placeholder="Ask a question..." />
+          <button>Send</button>
+  
+        </div>
+      </div>
+    </div>
+  
+    <script src="../api/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
